@@ -2,8 +2,8 @@ import Head from "next/head";
 
 const imagesData = [
   { src: "./img/img0.jpg" },
-  { src: "./img/img1.jpg" },
   { src: "./img/img2.jpg" },
+  { src: "./img/img1.jpg" },
   { src: "./img/img3.jpg" },
 ];
 
@@ -38,9 +38,12 @@ export default function Home() {
               přirozenou krásu
             </h1>
             <div className="text-center mb-14">
-              <button className="bg-gray-600 p-4 px-20 text-xl rounded-lg text-amber-50">
+              <a
+                href="/kontakt"
+                className="bg-gray-600 p-4 px-20 text-xl rounded-lg text-amber-50"
+              >
                 Objednat se
-              </button>
+              </a>
             </div>
           </div>
           <img
@@ -80,9 +83,14 @@ export default function Home() {
           </section>
           <section className="max-w-3xl mx-auto px-4 pb-14">
             <h2 className="text-center pb-14 text-2xl">
-              Nové kadeřnictví Třebíči
+              Nové kadeřnictví v Třebíči
             </h2>
             <img src="./img/trebic.jpg" alt="" className="-" />
+            <div className="text-center -translate-y-8">
+              <button className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50">
+                Zobrazit na mapě
+              </button>
+            </div>
           </section>
           <section className="max-w-3xl mx-auto px-4 pb-14">
             <h3 className="text-center text-2xl pb-14">
@@ -125,7 +133,7 @@ export default function Home() {
         </div>
 
         <div className="w-full text-center pt-28 pb-96">
-          <a href="https://simon-barak.link/" className="text-gray-500 ">
+          <a href="https://simon-barak.link/" className="text-gray-600 text-sm">
             Šimon Bařák
           </a>
         </div>
