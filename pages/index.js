@@ -1,82 +1,135 @@
-import Head from 'next/head'
+import Head from "next/head";
+
+const imagesData = [
+  { src: "./img/img0.jpg" },
+  { src: "./img/img1.jpg" },
+  { src: "./img/img2.jpg" },
+  { src: "./img/img3.jpg" },
+];
 
 export default function Home() {
+  const imagesEls = imagesData.map((img) => (
+    <img
+      key={img.src}
+      src={img.src}
+      alt="Vercel Logo"
+      className="bg-cover block w-full"
+    />
+  ));
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="font-body">
       <Head>
-        <title>Create Next App</title>
+        <title>Kadeřnictví Vlaďka K</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main className=" ">
+        <section className="relative overflow-hidden">
+          <header className="flex justify-between">
+            <div className="w-20 lg:w-24">
+              <img src="./img/logo.svg" alt="Logo kadeřnictví Vlaďka K" />
+            </div>
+          </header>
+          <div className="z-10 max-w-3xl mx-auto pt-72">
+            <h1 className="text-4xl lg:text-6xl font-normal mb-20 px-4">
+              Podpořte svou
+              <br />
+              přirozenou krásu
+            </h1>
+            <div className="text-center mb-14">
+              <button className="bg-gray-600 p-4 px-20 text-xl rounded-lg text-amber-50">
+                Objednat se
+              </button>
+            </div>
+          </div>
+          <img
+            style={{ zIndex: -1 }}
+            className="absolute top-0 z-0 h-screen w-screen object-cover"
+            src="./bg.jpg"
+            alt="Ukázka účesu z kadeřnictví Vlaďka K"
+          />
+        </section>
+        <div className="bg-amber-50">
+          <section className="max-w-3xl mx-auto pt-14 pb-14 px-4">
+            <h3 className="text-2xl">
+              <div>Studio Vlaďka K</div>
+              <div className="text-gray-500">
+                Dámské, pánské a dětské kadeřnictví.
+              </div>
+            </h3>
+          </section>
+          <section className="max-w-3xl mx-auto  px-4 pb-14">
+            <div className="grid md:grid-flow-col gap-2">
+              <div className="bg-white shadow-lg p-4 rounded-lg">
+                <div className="mb-6">📣 Otevřela jsem studio v Třebíči.</div>
+                <div className="text-sm text-gray-300">10. 9. 2021</div>
+              </div>
+              <div className="bg-white shadow-lg p-4 rounded-lg">
+                <div className="mb-6">
+                  📣 Stříhám v roušce, ale mohu přijímat objednávky.
+                </div>
+                <div className="text-sm text-gray-300">10. 9. 2021</div>
+              </div>
+            </div>
+          </section>
+          <section className="max-w-3xl mx-auto px-4 pb-14">
+            <div className="grid grid-flow-col grid-cols-2 grid-rows-2">
+              {imagesEls}
+            </div>
+          </section>
+          <section className="max-w-3xl mx-auto px-4 pb-14">
+            <h2 className="text-center pb-14 text-2xl">
+              Nové kadeřnictví Třebíči
+            </h2>
+            <img src="./img/trebic.jpg" alt="" className="-" />
+          </section>
+          <section className="max-w-3xl mx-auto px-4 pb-14">
+            <h3 className="text-center text-2xl pb-14">
+              Používáme profesionální kosmetiku Goldwell
+            </h3>
+            <img src="./img/goldwell.jpg" alt="" className="-" />
+          </section>
+          <section className="m-auto text-center px-4 pt-14 pb-28">
+            <div className="mb-8">
+              Zavolejte a najdeme pro
+              <br /> vás ideální termín
+            </div>
+            <div className="text-4xl mb-8">602 966 633</div>
+            <div className="text-gray-500">
+              Objednávky na svatební účesy
+              <br />v současné době nepřijímám
+            </div>
+          </section>
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+      <footer className="bg-gray-900">
+        <div className="pt-28 pb-28">
+          <table className="text-amber-50 m-auto">
+            <tbody>
+              <tr>
+                <td className="p-2">E-mail:</td>
+                <td className="p-2">kadernictvi@vladkak.cz</td>
+              </tr>
+              <tr>
+                <td className="p-2">Adresa:</td>
+                <td className="p-2">
+                  Hrotovická 1202/27
+                  <br />
+                  Třebíč, 674 01
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="w-full text-center pt-28 pb-96">
+          <a href="https://simon-barak.link/" className="text-gray-500 ">
+            Šimon Bařák
+          </a>
+        </div>
       </footer>
     </div>
-  )
+  );
 }
