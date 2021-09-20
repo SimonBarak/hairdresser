@@ -37,7 +37,7 @@ export default function Home() {
               <br />
               přirozenou krásu
             </h1>
-            <div className="text-center mb-14">
+            <div className="text-center md:text-left mb-14">
               <a
                 href="/kontakt"
                 className="bg-gray-600 p-4 px-20 text-xl rounded-lg text-amber-50"
@@ -54,21 +54,21 @@ export default function Home() {
           />
         </section>
         <div className="bg-amber-50">
-          <section className="max-w-3xl mx-auto pt-14 pb-14 px-4">
-            <h3 className="text-2xl">
+          <section className="max-w-3xl mx-auto pt-20 pb-20 px-4">
+            <h3 className="text-2xl md:text-3xl">
               <div>Studio Vlaďka K</div>
               <div className="text-gray-500">
                 Dámské, pánské a dětské kadeřnictví.
               </div>
             </h3>
           </section>
-          <section className="max-w-3xl mx-auto  px-4 pb-14">
-            <div className="grid md:grid-flow-col gap-2">
-              <div className="bg-white shadow-lg p-4 rounded-lg">
+          <section className="max-w-3xl mx-auto  px-4 pb-20 md:pb-28">
+            <div className="grid md:grid-flow-col gap-2 md:grid-cols-2">
+              <div className="bg-white shadow-lg p-4 rounded-lg ">
                 <div className="mb-6">📣 Otevřela jsem studio v Třebíči.</div>
                 <div className="text-sm text-gray-300">10. 9. 2021</div>
               </div>
-              <div className="bg-white shadow-lg p-4 rounded-lg">
+              <div className="bg-white shadow-lg p-4 rounded-lg ">
                 <div className="mb-6">
                   📣 Stříhám v roušce, ale mohu přijímat objednávky.
                 </div>
@@ -76,13 +76,13 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="max-w-3xl mx-auto px-4 pb-14">
+          <section className="max-w-3xl mx-auto px-4 pb-20 md:pb-28">
             <div className="grid grid-flow-col grid-cols-2 grid-rows-2">
               {imagesEls}
             </div>
           </section>
-          <section className="max-w-3xl mx-auto px-4 pb-14">
-            <h2 className="text-center pb-14 text-2xl">
+          <section className="max-w-3xl mx-auto px-4 pb-20 md:pb-28">
+            <h2 className="text-center pb-20 md:pb-28 text-2xl">
               Nové kadeřnictví v Třebíči
             </h2>
             <img src="./img/trebic.jpg" alt="" className="-" />
@@ -92,19 +92,16 @@ export default function Home() {
               </button>
             </div>
           </section>
-          <section className="max-w-3xl mx-auto px-4 pb-14">
-            <h3 className="text-center text-2xl pb-14">
+          <section className="max-w-3xl mx-auto px-4 pb-20 md:pb-28">
+            <h3 className="text-center text-2xl pb-20 md:pb-28">
               Používáme profesionální kosmetiku Goldwell
             </h3>
             <img src="./img/goldwell.jpg" alt="" className="-" />
           </section>
-          <section className="m-auto text-center px-4 pt-14 pb-28">
-            <div className="mb-8">
-              Zavolejte a najdeme pro
-              <br /> vás ideální termín
-            </div>
-            <div className="text-4xl mb-8">602 966 633</div>
-            <div className="text-gray-500">
+          <section className="m-auto text-center px-4 pt-14 pb-40">
+            <div className="mb-8 lg:text-xl">Objednávejte se telefonicky</div>
+            <div className="text-4xl lg:text-6xl mb-8">602 966 633</div>
+            <div className="text-gray-500 lg:text-xl">
               Objednávky na svatební účesy
               <br />v současné době nepřijímám
             </div>

@@ -29,10 +29,10 @@ export default function Home() {
           />
         </section>
         <div className="bg-amber-50">
-          <section className="m-auto text-center px-4 pt-14 pb-28">
-            <div className="mb-8">Objednávejte se telefonicky</div>
-            <div className="text-4xl mb-8">602 966 633</div>
-            <div className="text-gray-500">
+          <section className="m-auto text-center px-4 pt-14 pb-40">
+            <div className="mb-8 lg:text-xl">Objednávejte se telefonicky</div>
+            <div className="text-4xl lg:text-6xl mb-8">602 966 633</div>
+            <div className="text-gray-500 lg:text-xl">
               Objednávky na svatební účesy
               <br />v současné době nepřijímám
             </div>
