@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: public/data/news.json
+  label: Zprávy
+  match: "**/*"
+- type: document
   path: public/data/prices.json
   label: Ceník
 upload_dir: uploads
