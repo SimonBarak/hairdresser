@@ -8,10 +8,11 @@ fields:
   fields:
   - type: text
     name: name
-    label: name
+    label: Název
   - type: text
     name: more
-    label: more
+    label: Popis
   - type: text
     name: price
-    label: price
+    label: Cena
+    description: např 500 - 600 Kč
