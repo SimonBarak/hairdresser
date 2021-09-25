@@ -1,0 +1,17 @@
+---
+label: News
+hide_body: true
+fields:
+- type: field_group_list
+  name: news
+  label: news
+  fields:
+  - type: datetime
+    name: start-date
+    label: start-date
+  - type: datetime
+    name: end-date
+    label: end-date
+  - type: text
+    name: content
+    label: content
