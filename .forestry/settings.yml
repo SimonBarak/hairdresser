@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: data/prices.json
+  path: public/data/prices.json
   label: Ceník
 upload_dir: uploads
 public_path: "/uploads"
