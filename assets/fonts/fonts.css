@@ -15,3 +15,20 @@
   src: url("./landing-light.woff2") format("woff2"),
     url("./landing-light.woff") format("woff");
 }
+
+.prices tr:nth-child(odd) {
+  background-color: rgba(245, 245, 225, 1);
+}
+
+.prices td {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.prices td:nth-child(odd) {
+  max-width: 20rem;
+}
+
+.prices td:nth-child(even) {
+  text-align: right;
+}

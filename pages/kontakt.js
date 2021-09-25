@@ -17,8 +17,8 @@ export default function Home() {
           </header>
           <div className="z-10 max-w-3xl mx-auto pt-72">
             <h1 className="text-4xl lg:text-6xl font-normal mb-20 px-4">
-              Najdeme pro vás
-              <br /> ideální termín
+              Najdeme pro
+              <br /> vás ideální termín
             </h1>
           </div>
           <img
@@ -29,7 +29,7 @@ export default function Home() {
           />
         </section>
         <div className="bg-amber-50">
-          <section className="m-auto text-center px-4 pt-14 pb-40">
+          <section id="mapa" className="m-auto text-center px-4 pt-14 pb-40">
             <div className="mb-8 lg:text-xl">Objednávejte se telefonicky</div>
             <div className="text-4xl lg:text-6xl mb-8">602 966 633</div>
             <div className="text-gray-500 lg:text-xl">
@@ -39,12 +39,12 @@ export default function Home() {
           </section>
           <section className="max-w-3xl mx-auto px-4 pb-14">
             <h2 className="text-center pb-14 text-2xl">
-              Nové kadeřnictví v Třebíči
+              Vstup z parkoviště v zadní části budovy
             </h2>
-            <img src="./img/trebic.jpg" alt="" className="-" />
+            <img src="./img/map.jpg" alt="" className="-" />
             <div className="text-center -translate-y-8">
               <button className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50">
-                Zobrazit na mapě
+                Google Maps
               </button>
             </div>
           </section>

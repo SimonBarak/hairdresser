@@ -7,16 +7,45 @@ const imagesData = [
   { src: "./img/img3.jpg" },
 ];
 
-export default function Home() {
-  const imagesEls = imagesData.map((img) => (
-    <img
-      key={img.src}
-      src={img.src}
-      alt="Vercel Logo"
-      className="bg-cover block w-full"
-    />
-  ));
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const resPrices = await fetch("http://localhost:3000/data/prices.json");
+  const resNews = await fetch("http://localhost:3000/data/news.json");
+  const { prices } = await resPrices.json();
+  const { news } = await resNews.json();
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      prices,
+      news,
+    },
+  };
+}
 
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries. See the "Technical details" section.
+// export async function getStaticProps() {
+//   // Call an external API endpoint to get posts.
+//   // You can use any data fetching library
+//   const res = await fetch("../data/prices.json");
+//   const posts = await res.json();
+
+//   console.log(posts);
+
+//   // By returning { props: { posts } }, the Blog component
+//   // will receive `posts` as a prop at build time
+//   return {
+//     props: {
+//       posts,
+//     },
+//   };
+// }
+
+export default function Home({ prices, news }) {
+  console.log(news);
   return (
     <div className="font-body">
       <Head>
@@ -63,23 +92,33 @@ export default function Home() {
             </h3>
           </section>
           <section className="max-w-3xl mx-auto  px-4 pb-20 md:pb-28">
-            <div className="grid md:grid-flow-col gap-2 md:grid-cols-2">
-              <div className="bg-white shadow-lg p-4 rounded-lg ">
-                <div className="mb-6">📣 Otevřela jsem studio v Třebíči.</div>
-                <div className="text-sm text-gray-300">10. 9. 2021</div>
-              </div>
-              <div className="bg-white shadow-lg p-4 rounded-lg ">
-                <div className="mb-6">
-                  📣 Stříhám v roušce, ale mohu přijímat objednávky.
+            <div className="grid gap-2 md:grid-cols-2">
+              {news.map((item) => (
+                <div
+                  key={item.content}
+                  className="bg-white shadow-lg p-4 rounded-lg"
+                >
+                  <div className="mb-6">📣 {item.content}</div>
+                  <div className="text-sm text-gray-300">10. 9. 2021</div>
                 </div>
-                <div className="text-sm text-gray-300">10. 9. 2021</div>
-              </div>
+              ))}
             </div>
           </section>
           <section className="max-w-3xl mx-auto px-4 pb-20 md:pb-28">
-            <div className="grid grid-flow-col grid-cols-2 grid-rows-2">
-              {imagesEls}
-            </div>
+            <h2 className="pb-14 text-2xl text-center">Ceník</h2>
+            <table className="prices mx-auto w-full border-b-2 border-amber-100">
+              <tbody>
+                {prices.map((price) => (
+                  <tr key={price.price}>
+                    <td>
+                      <div>{price.name}</div>
+                      <div className="opacity-50">{price.more}</div>
+                    </td>
+                    <td>{price.price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </section>
           <section className="max-w-3xl mx-auto px-4 pb-20 md:pb-28">
             <h2 className="text-center pb-20 md:pb-28 text-2xl">
