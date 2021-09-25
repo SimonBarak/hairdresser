@@ -7,7 +7,6 @@ sections:
 - type: document
   path: public/data/news.json
   label: Zprávy
-  match: "**/*"
 - type: document
   path: public/data/prices.json
   label: Ceník
