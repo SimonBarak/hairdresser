@@ -4,14 +4,14 @@ hide_body: true
 fields:
 - type: field_group_list
   name: news
-  label: news
+  label: Zprávy
   fields:
   - type: datetime
     name: start-date
-    label: start-date
+    label: Začátek zveřejnění
   - type: datetime
     name: end-date
-    label: end-date
+    label: Konec zveřejnění
   - type: text
     name: content
-    label: content
+    label: Text zprávy
