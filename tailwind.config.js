@@ -11,7 +11,7 @@ module.exports = {
       amber: colors.amber,
     },
     fontFamily: {
-      body: ['"Inter"', '"ui-sans-serif"'],
+      body: ['"Inter"', '"sans-serif"', '"Arial"'],
     },
   },
   variants: {
