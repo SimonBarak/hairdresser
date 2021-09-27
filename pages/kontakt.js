@@ -5,7 +5,8 @@ export default function Home() {
     <div className="font-body">
       <Head>
         <title>Kadeřnictví Vlaďka K</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
       <main className=" ">
@@ -24,7 +25,13 @@ export default function Home() {
           <img
             style={{ zIndex: -1 }}
             className="absolute top-0 z-0 h-screen w-screen object-cover"
-            src="./bg1.jpg"
+            loading="lazy"
+            https:srcset="
+https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1632772014/vladkak/bg1.jpg 500w,
+https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg1.jpg 710w,
+https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1000/v1632772014/vladkak/bg1.jpg 1000w,
+https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg1.jpg 1420w"
+            src="https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1632772014/vladkak/bg1.jpg"
             alt="Ukázka účesu z kadeřnictví Vlaďka K"
           />
         </section>
