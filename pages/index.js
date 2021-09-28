@@ -3,12 +3,8 @@ import Head from "next/head";
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
-  const resPrices = await fetch(
-    "https://simonbarak.github.io/hairdresser/data/prices.json"
-  );
-  const resNews = await fetch(
-    "https://simonbarak.github.io/hairdresser/data/news.json"
-  );
+  const resPrices = await fetch("http://localhost:3000/data/prices.json");
+  const resNews = await fetch("http://localhost:3000/data/news.json");
   const { prices } = await resPrices.json();
   const { news } = await resNews.json();
 
