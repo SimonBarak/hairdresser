@@ -1,22 +1,24 @@
 import Head from "next/head";
+import { prices } from "../lib/data/prices.js";
+import { news } from "../lib/data/news.js";
 
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
-  const resPrices = await fetch("http://localhost:3000/data/prices.json");
-  const resNews = await fetch("http://localhost:3000/data/news.json");
-  const { prices } = await resPrices.json();
-  const { news } = await resNews.json();
+// export async function getStaticProps() {
+//   // Call an external API endpoint to get posts.
+//   // You can use any data fetching library
+//   const resPrices = await fetch("http://localhost:3000/data/prices.json");
+//   const resNews = await fetch("http://localhost:3000/data/news.json");
+//   const { prices } = await resPrices.json();
+//   const { news } = await resNews.json();
 
-  return {
-    props: {
-      prices,
-      news,
-    },
-  };
-}
+//   return {
+//     props: {
+//       prices,
+//       news,
+//     },
+//   };
+// }
 
-export default function Home({ prices, news }) {
+export default function Home() {
   return (
     <div className="font-body">
       <Head>
