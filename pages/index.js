@@ -1,12 +1,5 @@
 import Head from "next/head";
 
-const imagesData = [
-  { src: "./img/img0.jpg" },
-  { src: "./img/img2.jpg" },
-  { src: "./img/img1.jpg" },
-  { src: "./img/img3.jpg" },
-];
-
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
@@ -14,8 +7,7 @@ export async function getStaticProps() {
   const resNews = await fetch("http://localhost:3000/data/news.json");
   const { prices } = await resPrices.json();
   const { news } = await resNews.json();
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
+
   return {
     props: {
       prices,
@@ -23,26 +15,6 @@ export async function getStaticProps() {
     },
   };
 }
-
-// This function gets called at build time on server-side.
-// It won't be called on client-side, so you can even do
-// direct database queries. See the "Technical details" section.
-// export async function getStaticProps() {
-//   // Call an external API endpoint to get posts.
-//   // You can use any data fetching library
-//   const res = await fetch("../data/prices.json");
-//   const posts = await res.json();
-
-//   console.log(posts);
-
-//   // By returning { props: { posts } }, the Blog component
-//   // will receive `posts` as a prop at build time
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// }
 
 export default function Home({ prices, news }) {
   return (
