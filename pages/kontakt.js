@@ -26,8 +26,7 @@ export default function Home() {
             style={{ zIndex: -1 }}
             className="absolute top-0 z-0 h-screen w-screen object-cover"
             loading="lazy"
-            https:srcset="
-https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1632772014/vladkak/bg1.jpg 500w,
+            srcSet="https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1632772014/vladkak/bg1.jpg 500w,
 https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg1.jpg 710w,
 https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1000/v1632772014/vladkak/bg1.jpg 1000w,
 https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg1.jpg 1420w"
