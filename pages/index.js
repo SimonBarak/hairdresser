@@ -1,8 +1,6 @@
 import Head from "next/head";
-import { prices } from "../lib/data/prices.js";
-import { news } from "../lib/data/news.js";
-
-import newss from "../public/data/news.json";
+import prices from "../public/data/prices.json";
+import news from "../public/data/news.json";
 
 // export async function getStaticProps() {
 //   // Call an external API endpoint to get posts.
@@ -21,7 +19,7 @@ import newss from "../public/data/news.json";
 // }
 
 export default function Home() {
-  console.log(newss);
+  console.log(news);
   return (
     <div className="font-body">
       <Head>
@@ -74,7 +72,7 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
           </section>
           <section className="max-w-3xl mx-auto  px-4 pb-20 md:pb-28">
             <div className="grid gap-2 md:grid-cols-2">
-              {news.map((item) => (
+              {news.news.map((item) => (
                 <div
                   key={item.content}
                   className="bg-white shadow-lg p-4 rounded-lg flex flex-col"
@@ -97,7 +95,7 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
             <h2 className="pb-14 text-2xl md:text-3xl text-center">Ceník</h2>
             <table className="prices mx-auto w-full border-b-2 border-gray-100 text-md">
               <tbody>
-                {prices.map((price) => (
+                {prices.prices.map((price) => (
                   <tr key={price.name}>
                     <td>
                       <div>{price.name}</div>
