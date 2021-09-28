@@ -2,6 +2,8 @@ import Head from "next/head";
 import { prices } from "../lib/data/prices.js";
 import { news } from "../lib/data/news.js";
 
+import newss from "../public/data/news.json";
+
 // export async function getStaticProps() {
 //   // Call an external API endpoint to get posts.
 //   // You can use any data fetching library
@@ -19,6 +21,7 @@ import { news } from "../lib/data/news.js";
 // }
 
 export default function Home() {
+  console.log(newss);
   return (
     <div className="font-body">
       <Head>
