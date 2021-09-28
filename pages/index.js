@@ -65,10 +65,8 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
         <div className="bg-amber-50">
           <section className="max-w-3xl mx-auto pt-20 pb-20 px-4">
             <h3 className="text-2xl md:text-3xl">
-              <div>Studio Vlaďka K</div>
-              <div className="text-gray-500">
-                Dámské, pánské a dětské kadeřnictví.
-              </div>
+              <div>Kadeřnictví Vlaďka K</div>
+              <div className="text-gray-500">Dámské, pánské a dětské</div>
             </h3>
           </section>
           <section className="max-w-3xl mx-auto  px-4 pb-20 md:pb-28">
