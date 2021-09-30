@@ -17,7 +17,7 @@ export default function Home() {
             </a>
           </header>
           <div className="z-10 max-w-3xl mx-auto pt-72">
-            <h1 className="text-4xl lg:text-6xl font-normal mb-20 px-4">
+            <h1 className="text-4xl md:text-6xl mb-14 px-4">
               Najdeme pro
               <br /> vás ideální termín
             </h1>

@@ -36,7 +36,7 @@ export default function Home() {
             </div>
           </header>
           <div className="z-10 max-w-3xl mx-auto pt-72">
-            <h1 className="text-4xl md:text-6xl mb-14 px-4 leading-loose">
+            <h1 className="text-4xl md:text-6xl mb-14 px-4">
               Podpořte svou
               <br />
               přirozenou krásu
