@@ -16,12 +16,7 @@ export default function Home() {
               <img src="./img/logo.svg" alt="Logo kadeřnictví Vlaďka K" />
             </a>
           </header>
-          <div className="z-10 max-w-3xl mx-auto pt-72">
-            <h1 className="text-4xl md:text-6xl mb-14 px-4">
-              Najdeme pro
-              <br /> vás ideální termín
-            </h1>
-          </div>
+          <div className="z-10 max-w-3xl mx-auto pt-28 lg:pt-80 "></div>
           <img
             style={{ zIndex: -1 }}
             className="absolute top-0 z-0 h-screen w-screen object-cover"
@@ -35,7 +30,7 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1633088226/vladkak/bg2
           />
         </section>
         <div className="bg-amber-50">
-          <section id="mapa" className="m-auto text-center px-4 pt-14 pb-40">
+          <section id="mapa" className="m-auto text-center px-4 py-20">
             <div className="mb-8 lg:text-xl">Objednávejte se telefonicky</div>
             <div className="text-4xl lg:text-6xl mb-8">602 966 633</div>
             <div className="text-gray-500 lg:text-xl">
