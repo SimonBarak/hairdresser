@@ -12,8 +12,8 @@ export default function Home() {
       <main className=" ">
         <section className="relative overflow-hidden">
           <header className="flex justify-between">
-            <a href="/" className="block w-20 lg:w-24">
-              <img src="./img/logo.svg" alt="Logo kadeřnictví Vlaďka K" />
+            <a href="/" className="block w-36 md:w-44 lg:w-48 p-4">
+              <img src="./img/logo.png" alt="Logo kadeřnictví Vlaďka K" />
             </a>
           </header>
           <div className="z-10 max-w-3xl mx-auto pt-28 lg:pt-80 "></div>
@@ -38,7 +38,7 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1633088226/vladkak/bg2
               <br />v současné době nepřijímám
             </div>
           </section>
-          <section className="max-w-3xl mx-auto px-4 pb-14">
+          <section id="map" className="max-w-3xl mx-auto px-4 pb-14">
             <h2 className="text-center pb-14 text-2xl">
               Vstup z parkoviště v zadní části budovy
             </h2>

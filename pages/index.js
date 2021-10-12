@@ -19,7 +19,6 @@ import news from "../public/data/news.json";
 // }
 
 export default function Home() {
-  console.log(news);
   return (
     <div className="font-body">
       <Head>
@@ -31,8 +30,8 @@ export default function Home() {
       <main className=" ">
         <section className="relative overflow-hidden">
           <header className="flex justify-between">
-            <div className="w-20 lg:w-24">
-              <img src="./img/logo.svg" alt="Logo kadeřnictví Vlaďka K" />
+            <div className="w-36 md:w-44 lg:w-48 p-4">
+              <img src="./img/logo.png" alt="Logo kadeřnictví Vlaďka K" />
             </div>
           </header>
           <div className="z-10 max-w-3xl mx-auto pt-72">
@@ -126,9 +125,12 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772160/vladkak/tre
               className="-"
             />
             <div className="text-center -translate-y-8">
-              <button className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50">
+              <a
+                href="/kontakt#map"
+                className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50"
+              >
                 Zobrazit na mapě
-              </button>
+              </a>
             </div>
           </section>
           <section className="max-w-3xl mx-auto px-4 pb-14 md:pb-28">
