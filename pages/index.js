@@ -25,6 +25,20 @@ export default function Home() {
         <title>Kadeřnictví Vlaďka K</title>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon.png" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-210915986-1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-210915986-1', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </Head>
 
       <main className=" ">
