@@ -44,9 +44,13 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1633088226/vladkak/bg2
             </h2>
             <img src="./img/map.jpg" alt="" className="-" />
             <div className="text-center -translate-y-8">
-              <button className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50">
+              <a
+                href="https://goo.gl/maps/zuF3ZV3bLTTG8tsf7"
+                alt="Link to google maps"
+                className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50"
+              >
                 Google Maps
-              </button>
+              </a>
             </div>
           </section>
         </div>
