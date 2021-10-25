@@ -129,16 +129,15 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
             </h2>
             <img
               loading="lazy"
-              srcSet="
-https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1632772160/vladkak/trebic.jpg 500w,
-https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772160/vladkak/trebic.jpg 710w,
-https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1000/v1632772160/vladkak/trebic.jpg 1000w,
-https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772160/vladkak/trebic.jpg 1420w"
-              src="https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1632772160/vladkak/trebic.jpg"
-              alt=""
-              className="-"
+              srcSet="https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1635191408/vladkak/DSCF4156.jpg 500w,
+              https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1635191408/vladkak/DSCF4156.jpg 710w,
+              https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1000/v1635191408/vladkak/DSCF4156.jpg 1000w,
+              https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1635191408/vladkak/DSCF4156.jpg 1420w"
+              src="https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1635191408/vladkak/DSCF4156.jpg"
+              alt="Budova Kadeřnictví v Třebíčí"
+              className="max-w-md m-auto"
             />
-            <div className="text-center -translate-y-8">
+            <div className="text-center">
               <a
                 href="/kontakt#map"
                 className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50"
