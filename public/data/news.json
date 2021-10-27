@@ -1,19 +1,5 @@
 {
   "news": [
-    {
-      "start-date": "2021-10-26T22:00:00Z",
-      "end-date": "2021-11-26T23:00:00Z",
-      "content": "Jsem na dovolené, vrátím se 20. 1. 2022"
-    },
-    {
-      "start-date": "2021-08-29T22:00:00Z",
-      "end-date": "2021-10-22T22:00:00Z",
-      "content": "Otevřela jsem studio v Třebíči."
-    },
-    {
-      "start-date": "2021-08-29 22:00:00 +0000",
-      "end-date": "2021-10-22 22:00:00 +0000",
-      "content": "Stříhám v roušce, ale mohu přijímat objednávky."
-    }
+
   ]
 }
