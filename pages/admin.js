@@ -122,9 +122,6 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
             <div className="p-4 text-gray-500 text-md">
               Objednávky na svatební účesy v současné době nepřijímám.
             </div>
-            <div className="p-4 text-gray-500 text-md">
-              Platba pouze v hotovosti.
-            </div>
           </section>
           <section className="max-w-3xl mx-auto px-4 pb-20 md:pb-28">
             <h2 className="text-center pb-14 md:pb-28 text-2xl md:text-3xl">
