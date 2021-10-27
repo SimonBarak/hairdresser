@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: field_group_list
   name: prices
-  label: Ceny
+  label: Pložky ceníku
   fields:
   - type: text
     name: name
