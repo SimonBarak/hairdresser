@@ -22,11 +22,7 @@ const NewsEmbed = ({ item }) => {
   var today = new Date();
   var startDate = new Date(item.startDate);
   var endDate = new Date(item.endDate);
-  var neco = startDate.toLocaleDateString("cs-CZ");
-
-  const year = startDate.getFullYear();
-  const month = startDate.getMonth() + 1;
-  const day = startDate.getDate();
+  var formatStartDate = startDate.toLocaleDateString("cs-CZ");
 
   if (today < endDate) {
     return (
@@ -43,7 +39,7 @@ const NewsEmbed = ({ item }) => {
 
           {item.content}
         </div>
-        <div className="text-sm text-gray-300">{neco}</div>
+        <div className="text-sm text-gray-300">{formatStartDate}</div>
       </div>
     );
   } else return <div></div>;
@@ -116,8 +112,8 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
           </section>
           <section className="max-w-3xl mx-auto  px-4 pb-20 md:pb-28">
             <div className="grid gap-2 md:grid-cols-2">
-              {news.news.map((item) => (
-                <NewsEmbed item={item} />
+              {news.news.map((item, index) => (
+                <NewsEmbed key={item.startDate + index} item={item} />
               ))}
             </div>
           </section>
