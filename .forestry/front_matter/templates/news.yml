@@ -15,3 +15,5 @@ fields:
   - type: text
     name: content
     label: Text zprávy
+pages:
+- public/data/news.json
