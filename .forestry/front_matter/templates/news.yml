@@ -2,18 +2,18 @@
 label: News
 hide_body: true
 fields:
-- type: field_group_list
-  name: news
-  label: Zprávy
-  fields:
-  - type: datetime
-    name: start-date
-    label: Začátek zveřejnění
-  - type: datetime
-    name: end-date
-    label: Konec zveřejnění
-  - type: text
-    name: content
-    label: Text zprávy
+  - type: field_group_list
+    name: news
+    label: Zprávy
+    fields:
+      - type: datetime
+        name: startDate
+        label: Začátek zveřejnění
+      - type: datetime
+        name: endDate
+        label: Konec zveřejnění
+      - type: text
+        name: content
+        label: Text zprávy
 pages:
-- public/data/news.json
+  - public/data/news.json

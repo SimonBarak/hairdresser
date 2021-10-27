@@ -1,13 +1,13 @@
 {
   "news": [
     {
-      "start-date": "",
-      "end-date": "2021-10-31T12:21:44Z",
+      "startDate": "2021-10-17T11:21:10Z",
+      "endDate": "2021-10-31T12:21:44Z",
       "content": "Nově otevřené kadeřnictví!"
     },
     {
-      "start-date": "2021-10-17T11:21:10Z",
-      "end-date": "2021-10-19T11:21:13Z",
+      "startDate": "2021-10-17T11:21:10Z",
+      "endDate": "2021-10-19T11:21:13Z",
       "content": "Vítejte na mém webu!"
     }
   ]

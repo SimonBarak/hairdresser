@@ -18,6 +18,37 @@ import news from "../public/data/news.json";
 //   };
 // }
 
+const NewsEmbed = ({ item }) => {
+  var today = new Date();
+  var startDate = new Date(item.startDate);
+  var endDate = new Date(item.endDate);
+  var neco = startDate.toLocaleDateString("cs-CZ");
+
+  const year = startDate.getFullYear();
+  const month = startDate.getMonth() + 1;
+  const day = startDate.getDate();
+
+  if (today < endDate) {
+    return (
+      <div
+        key={item.content}
+        className="bg-white shadow-lg p-4 rounded-lg flex flex-col"
+      >
+        <div className="mb-6 flex-1">
+          <img
+            className="w-6 inline-block mr-2"
+            src="./img/news.png"
+            alt="news emoji"
+          />
+
+          {item.content}
+        </div>
+        <div className="text-sm text-gray-300">{neco}</div>
+      </div>
+    );
+  } else return <div></div>;
+};
+
 export default function Home() {
   return (
     <div className="font-body">
@@ -86,21 +117,7 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
           <section className="max-w-3xl mx-auto  px-4 pb-20 md:pb-28">
             <div className="grid gap-2 md:grid-cols-2">
               {news.news.map((item) => (
-                <div
-                  key={item.content}
-                  className="bg-white shadow-lg p-4 rounded-lg flex flex-col"
-                >
-                  <div className="mb-6 flex-1">
-                    <img
-                      className="w-6 inline-block mr-2"
-                      src="./img/news.png"
-                      alt="news emoji"
-                    />
-
-                    {item.content}
-                  </div>
-                  <div className="text-sm text-gray-300">10. 9. 2021</div>
-                </div>
+                <NewsEmbed item={item} />
               ))}
             </div>
           </section>
