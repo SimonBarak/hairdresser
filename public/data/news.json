@@ -1,6 +1,11 @@
 {
   "news": [
     {
+      "start-date": "",
+      "end-date": "2021-10-31T12:21:44Z",
+      "content": "Nově otevřené kadeřnictví!"
+    },
+    {
       "start-date": "2021-10-20T11:21:10Z",
       "end-date": "2021-10-26T11:21:13Z",
       "content": "Vítejte na mém webu!"
