@@ -16,3 +16,5 @@ fields:
     name: price
     label: Cena
     description: např 500 - 600 Kč
+pages:
+- public/data/prices.json
