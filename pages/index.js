@@ -139,7 +139,7 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
               Platba pouze v hotovosti.
             </div>
           </section>
-          <section className="max-w-3xl mx-auto px-4 pb-20 md:pb-28">
+          <section className="max-w-md mx-auto px-4 pb-20 md:pb-28">
             <h2 className="text-center pb-14 md:pb-28 text-2xl md:text-3xl">
               Nové kadeřnictví v Třebíči
             </h2>
@@ -151,12 +151,12 @@ https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1632772014/vladkak/bg.
               https://res.cloudinary.com/dhxmg9p4i/image/upload/w_1420/v1635191408/vladkak/DSCF4156.jpg 1420w"
               src="https://res.cloudinary.com/dhxmg9p4i/image/upload/w_500/v1635191408/vladkak/DSCF4156.jpg"
               alt="Budova Kadeřnictví v Třebíčí"
-              className="max-w-md m-auto"
+              className="m-auto"
             />
             <div className="text-center">
               <a
                 href="/kontakt#map"
-                className="bg-gray-900 p-4 px-16 text-xl rounded-lg text-amber-50"
+                className="bg-gray-900 p-4 px-8 md:px-16 text-lg md:text-xl rounded-lg text-amber-50"
               >
                 Zobrazit na mapě
               </a>
